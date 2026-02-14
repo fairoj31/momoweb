@@ -1,0 +1,1020 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333333; /* Dark gray for text */
+    background-color: #f0f0f0; /* Light ash background */
+}
+
+/* Header - Using Lite Yellow and Black */
+.header {
+    background: linear-gradient(135deg, #fff9e6 0%, #fff2d6 100%); /* Lite yellow gradient */
+    color: #000000; /* Black text */
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 3px solid #d3d3d3; /* Ash border */
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    background-color: transparent;
+    color: #000000; /* Black */
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #666666; /* Ash gray */
+    font-style: italic;
+}
+
+/* Navigation - Using Ash and White */
+.navbar {
+    background-color: #e0e0e0; /* Ash background */
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid #ffffff; /* White border */
+}
+
+.navbar a {
+    color: #000000; /* Black text */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #ffffff; /* White on hover */
+    color: #000000; /* Black text */
+}
+
+/* Main Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Page Header */
+.page-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.page-header h2 {
+    color: #000000; /* Black */
+    border-bottom: 2px solid #d3d3d3; /* Ash border */
+    padding-bottom: 0.5rem;
+    display: inline-block;
+    background-color: transparent;
+}
+
+/* Welcome Section (Home) */
+.welcome-section {
+    background-color: #ffffff; /* White */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    border: 1px solid #d3d3d3; /* Ash border */
+}
+
+.welcome-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #d3d3d3; /* Ash border */
+}
+
+.welcome-text p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #333333; /* Dark gray */
+}
+
+/* Quick Links (Home) */
+.quick-links {
+    background-color: #fff9e6; /* Lite yellow */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    border: 1px solid #d3d3d3; /* Ash border */
+}
+
+.quick-links h2 {
+    color: #000000; /* Black */
+    background-color: transparent;
+}
+
+.quick-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.quick-card {
+    background-color: #ffffff; /* White */
+    padding: 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #333333; /* Dark gray */
+    border-left: 4px solid #000000; /* Black border */
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #d3d3d3; /* Ash border */
+}
+
+.quick-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    background-color: #fff9e6; /* Lite yellow on hover */
+}
+
+.quick-card h3 {
+    color: #000000; /* Black */
+    margin-bottom: 0.5rem;
+    background-color: transparent;
+}
+
+/* University Info (Home) */
+.university-info {
+    background-color: #ffffff; /* White */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    border: 1px solid #d3d3d3; /* Ash border */
+}
+
+.university-info h2 {
+    color: #000000; /* Black */
+    background-color: transparent;
+}
+
+.uap-logo {
+    width: 150px;
+    margin: 1rem 0;
+}
+
+/* About Page Styles */
+.about-section {
+    background-color: #ffffff; /* White */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 2rem;
+    border: 1px solid #d3d3d3; /* Ash border */
+}
+
+.profile-large {
+    flex: 1;
+}
+
+.profile-large-img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    border: 3px solid #d3d3d3; /* Ash border */
+}
+
+.bio {
+    flex: 2;
+}
+
+.bio h3 {
+    color: #000000; /* Black */
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+
+.bio p {
+    margin-bottom: 1rem;
+    color: #333333; /* Dark gray */
+}
+
+.details-section {
+    background-color: #fff9e6; /* Lite yellow */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    border: 1px solid #d3d3d3; /* Ash border */
+}
+
+.details-section h3 {
+    color: #000000; /* Black */
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+
+.details-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.details-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #d3d3d3; /* Ash border */
+    color: #333333; /* Dark gray */
+}
+
+.details-table td:first-child {
+    font-weight: bold;
+    color: #000000; /* Black */
+}
+
+.interests-section {
+    background-color: #ffffff; /* White */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border: 1px solid #d3d3d3; /* Ash border */
+}
+
+.interests-section h3 {
+    color: #000000; /* Black */
+    background-color: transparent;
+}
+
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.interest-item {
+    background-color: #fff9e6; /* Lite yellow */
+    padding: 1.5rem;
+    border-radius: 6px;
+    border-left: 4px solid #000000; /* Black border */
+    border: 1px solid #d3d3d3; /* Ash border */
+}
+
+.interest-item h4 {
+    color: #000000; /* Black */
+    margin-bottom: 0.5rem;
+    background-color: transparent;
+}
+
+.interest-item p {
+    color: #666666; /* Ash gray */
+}
+
+/* Education Page Styles */
+.edu-university {
+    background-color: #ffffff; /* White */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    border: 1px solid #d3d3d3; /* Ash border */
+}
+
+.edu-university h3 {
+    color: #000000; /* Black */
+    margin-bottom: 1.5rem;
+    background-color: transparent;
+}
+
+.edu-previous {
+    background-color: #fff9e6; /* Lite yellow */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    border: 1px solid #d3d3d3; /* Ash border */
+}
+
+.edu-card {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #ffffff; /* White */
+    border-radius: 6px;
+    border: 1px solid #d3d3d3; /* Ash border */
+}
+
+.edu-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.edu-details h4 {
+    color: #000000; /* Black */
+    margin-bottom: 0.5rem;
+}
+
+.edu-degree {
+    font-weight: bold;
+    color: #333333; /* Dark gray */
+}
+
+.edu-duration {
+    color: #666666; /* Ash gray */
+    font-style: italic;
+}
+
+.edu-location {
+    color: #666666; /* Ash gray */
+}
+
+.coursework {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #fff9e6; /* Lite yellow */
+    border-radius: 6px;
+}
+
+.coursework h4 {
+    color: #000000; /* Black */
+    margin-bottom: 1rem;
+}
+
+.coursework ul {
+    list-style-position: inside;
+    color: #333333; /* Dark gray */
+}
+
+.coursework li {
+    margin-bottom: 0.5rem;
+}
+
+.achievements {
+    background-color: #ffffff; /* White */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border: 1px solid #d3d3d3; /* Ash border */
+}
+
+.achievements h3 {
+    color: #000000; /* Black */
+    margin-bottom: 1.5rem;
+}
+
+.achievement-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.achievement-table th {
+    background-color: #fff9e6; /* Lite yellow */
+    color: #000000; /* Black */
+    padding: 0.75rem;
+    border: 1px solid #d3d3d3; /* Ash border */
+}
+
+.achievement-table td {
+    padding: 0.75rem;
+    border: 1px solid #d3d3d3; /* Ash border */
+    color: #333333; /* Dark gray */
+}
+
+/* Skills Page Styles */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.skill-category {
+    background-color: #ffffff; /* White */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border: 1px solid #d3d3d3; /* Ash border */
+}
+
+.skill-category h3 {
+    color: #000000; /* Black */
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #d3d3d3; /* Ash border */
+    padding-bottom: 0.5rem;
+}
+
+.skill-list {
+    margin-top: 1rem;
+}
+
+.skill-item {
+    margin-bottom: 1rem;
+}
+
+.skill-name {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: #333333; /* Dark gray */
+    font-weight: bold;
+}
+
+.skill-bar {
+    background-color: #e0e0e0; /* Ash background */
+    height: 25px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #d3d3d3;
+}
+
+.skill-level {
+    background-color: #fff2d6; /* Lite yellow */
+    color: #000000; /* Black */
+    height: 100%;
+    line-height: 25px;
+    padding-left: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.soft-skills {
+    background-color: #f5f5f5; /* Light ash */
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.soft-skills ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.5rem;
+}
+
+.soft-skills li {
+    background-color: #fff9e6; /* Lite yellow */
+    padding: 0.5rem;
+    border-radius: 4px;
+    text-align: center;
+    color: #333333; /* Dark gray */
+    border: 1px solid #d3d3d3; /* Ash border */
+}
+
+.lab-skills {
+    background-color: #ffffff; /* White */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border: 1px solid #d3d3d3; /* Ash border */
+}
+
+.lab-skills h3 {
+    color: #000000; /* Black */
+    margin-bottom: 1.5rem;
+}
+
+.lab-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.lab-table th {
+    background-color: #fff9e6; /* Lite yellow */
+    color: #000000; /* Black */
+    padding: 0.75rem;
+    border: 1px solid #d3d3d3; /* Ash border */
+}
+
+.lab-table td {
+    padding: 0.75rem;
+    border: 1px solid #d3d3d3; /* Ash border */
+    color: #333333; /* Dark gray */
+}
+
+/* Projects Page Styles */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.project-card {
+    background-color: #ffffff; /* White */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border: 1px solid #d3d3d3; /* Ash border */
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    background-color: #fff9e6; /* Lite yellow */
+}
+
+.project-card h3 {
+    color: #000000; /* Black */
+    margin-bottom: 0.5rem;
+}
+
+.project-date {
+    color: #666666; /* Ash gray */
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.project-description {
+    color: #333333; /* Dark gray */
+    margin-bottom: 1rem;
+}
+
+.project-tech {
+    background-color: #e0e0e0; /* Ash */
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    color: #333333;
+}
+
+.project-course {
+    color: #666666; /* Ash gray */
+    font-size: 0.9rem;
+}
+
+.future-projects {
+    background-color: #fff9e6; /* Lite yellow */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border: 1px solid #d3d3d3; /* Ash border */
+}
+
+.future-projects h3 {
+    color: #000000; /* Black */
+    margin-bottom: 1rem;
+}
+
+.future-projects ul {
+    list-style-position: inside;
+    color: #333333; /* Dark gray */
+}
+
+.future-projects li {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid #d3d3d3; /* Ash border */
+}
+
+/* Contact Page Styles */
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-card {
+    background-color: #ffffff; /* White */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border: 1px solid #d3d3d3; /* Ash border */
+    text-align: center;
+}
+
+.contact-card h3 {
+    color: #000000; /* Black */
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.contact-card p {
+    color: #333333; /* Dark gray */
+    margin-bottom: 0.5rem;
+}
+
+.contact-card a {
+    color: #000000; /* Black */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+    color: #666666; /* Ash gray */
+}
+
+.social-section {
+    background-color: #fff9e6; /* Lite yellow */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    text-align: center;
+    border: 1px solid #d3d3d3; /* Ash border */
+}
+
+.social-section h3 {
+    color: #000000; /* Black */
+    margin-bottom: 1.5rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    background-color: #ffffff; /* White */
+    color: #000000; /* Black */
+    padding: 0.75rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #d3d3d3; /* Ash border */
+    transition: all 0.3s;
+}
+
+.social-link:hover {
+    background-color: #e0e0e0; /* Ash */
+    transform: scale(1.05);
+}
+
+.contact-form {
+    background-color: #ffffff; /* White */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    border: 1px solid #d3d3d3; /* Ash border */
+}
+
+.contact-form h3 {
+    color: #000000; /* Black */
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333333; /* Dark gray */
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d3d3d3; /* Ash border */
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    background-color: #fff9e6; /* Lite yellow */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #000000; /* Black */
+    background-color: #ffffff; /* White */
+}
+
+.submit-btn {
+    background-color: #000000; /* Black */
+    color: #ffffff; /* White */
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #666666; /* Ash gray */
+}
+
+.form-note {
+    margin-top: 1rem;
+    color: #666666; /* Ash gray */
+    font-style: italic;
+    text-align: center;
+}
+
+.university-contact {
+    background-color: #fff9e6; /* Lite yellow */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    border: 1px solid #d3d3d3; /* Ash border */
+}
+
+.university-contact h3 {
+    color: #000000; /* Black */
+    margin-bottom: 1rem;
+}
+
+.contact-logo {
+    width: 100px;
+    margin: 1rem 0;
+}
+
+.university-contact a {
+    color: #000000; /* Black */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.university-contact a:hover {
+    text-decoration: underline;
+    color: #666666; /* Ash gray */
+}
+
+/* Footer */
+.footer {
+    background-color: #e0e0e0; /* Ash */
+    color: #000000; /* Black */
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-top: 3px solid #ffffff; /* White border */
+}
+
+.footer p {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content,
+    .about-section,
+    .edu-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-img,
+    .profile-large-img {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+    
+    .profile-large-img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .navbar a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+    
+    .skills-container,
+    .projects-container,
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .interests-grid,
+    .soft-skills ul {
+        grid-template-columns: 1fr;
+    }
+    
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .social-link {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+/* Table Styles (from your original) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+table, th, td {
+    border: 1px solid #d3d3d3; /* Ash border */
+}
+
+th {
+    background-color: #fff9e6; /* Lite yellow */
+    color: #000000; /* Black */
+    padding: 0.75rem;
+}
+
+td {
+    padding: 0.75rem;
+    color: #333333; /* Dark gray */
+}
+
+/* Link Styles */
+a {
+    color: #000000; /* Black */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #666666; /* Ash gray */
+    text-decoration: underline;
+}
+/* Skills page specific styles */
+
+.skill-section {
+    background-color: #fff9e6;
+    border: 2px solid #d3d3d3;
+    padding: 15px 25px;
+    margin-bottom: 20px;
+}
+
+.skill-section h3 {
+    color: black;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 5px;
+}
+
+.skill-section ul {
+    list-style-type: square;
+    padding-left: 30px;
+}
+
+.skill-section li {
+    margin-bottom: 8px;
+    color: #333333;
+}
+
+/* For two-column layout on larger screens */
+@media (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    
+    .container h2:first-of-type {
+        grid-column: 1 / -1;
+    }
+    
+    .container h2:last-of-type {
+        grid-column: 1 / -1;
+        margin-top: 20px;
+    }
+    
+    .container table {
+        grid-column: 1 / -1;
+    }
+}
+
+/* Table styles (keep your existing table styles) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+}
+
+table, th, td {
+    border: 2px solid #d3d3d3;
+}
+
+th {
+    background-color: #fff9e6;
+    color: black;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    color: #333333;
+}
+
+/* Make sure your header and navbar styles are already in your CSS */
+/* Utility Classes */
+.text-black { color: #000000; }
+.text-dark-gray { color: #333333; }
+.text-ash { color: #666666; }
+.bg-white { background-color: #ffffff; }
+.bg-lite-yellow { background-color: #fff9e6; }
+.bg-ash { background-color: #e0e0e0; }
+.border-ash { border: 1px solid #d3d3d3; }
+/* Skills page styles */
+
+.skill-section {
+    background-color: #fff9e6;
+    border: 2px solid #d3d3d3;
+    padding: 15px 25px;
+    margin-bottom: 20px;
+}
+
+.skill-section h3 {
+    color: black;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 5px;
+}
+
+.skill-section ul {
+    list-style-type: square;
+    padding-left: 30px;
+}
+
+.skill-section li {
+    margin-bottom: 8px;
+    color: #333333;
+}
+
+/* For two-column layout on larger screens */
+@media (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    
+    .container h2 {
+        grid-column: 1 / -1;
+    }
+}
+/* Just add this one small thing */
+.project-box {
+    background-color: #fff9e6;
+    border: 2px solid #d3d3d3;
+    padding: 15px;
+    margin-bottom: 20px;
+} 
+/* Just add these simple styles */
+
+.info-box {
+    background-color: #fff9e6;
+    border: 2px solid #d3d3d3;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 2px solid #d3d3d3;
+    background-color: white;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #666666;
+}
+
+img {
+    border: 2px solid #d3d3d3;
+    padding: 5px;
+} 
+/* Make sure these styles exist */
+.welcome-section {
+    margin-bottom: 20px;  /* Space between welcome and quick links */
+}
+
+.quick-links {
+    margin-bottom: 20px;  /* Space before footer */
+}
+
+.container {
+    padding: 20px;
+}
